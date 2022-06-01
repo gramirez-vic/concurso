@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^lechona$ index.php?sorteo=1
+RewriteRule ^tablet$ index.php?sorteo=2
+RewriteRule ^ganadores$ index.php?ganadores=1
+RewriteRule ^$ index.php?sorteo=0
