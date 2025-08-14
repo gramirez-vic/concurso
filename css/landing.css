@@ -1,13 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
-body{font-family: 'PT Sans', sans-serif !important;background-image: url(../img/imagen.jpg);background-repeat: no-repeat;background-size: 100%;}
+body{
+    font-family: 'PT Sans', sans-serif !important;
+    background-image: url(../img/imagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.main-container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 5% auto;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
 .horizon{ opacity:"0"; }
-.logo{width: 30%;margin-top:5%}
-.ganador{font-size: 3.5em;text-transform: uppercase;color:#333;text-shadow: 0px 0px 7px #999;padding: 0;margin:0}
-.matricula{font-size: 2.5em;text-transform: uppercase;color:#333;text-shadow: 0px 0px 7px #999;padding: 0;margin:0}
-#mensaje{display:none;margin:50px 0 0 0}
-.botonSorteo{font-size: 1.5em;padding:10px 30px;}
-.botonSorteo:hover{font-size: 1.5em;padding:10px 30px;}
-.tambores{position: relative; float: left; left:30px; width:200px; top: 200px;}
-.tambores2{position: relative; float: right; width:300px; top: 300px;}
-.body{font-family: 'PT Sans', sans-serif !important;background-image: url(../img/imagen.jpg);background-repeat: no-repeat;background-size: 100%;}
+.logo{
+    width: 200px;
+    margin-top: 0;
+}
+.ganador{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #333;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    padding: 0;
+    margin: 20px 0;
+}
+.matricula{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #555;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    padding: 0;
+    margin: 10px 0;
+}
+#mensaje{
+    display:none;
+    margin:50px 0 0 0
+}
+.botonSorteo{
+    font-size: 1.2em;
+    padding:15px 40px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.botonSorteo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.tambores{
+    display: none; /* Ocultamos la imagen de los tambores para un diseño más limpio */
+}
+.tambores2{
+    display: none; /* Ocultamos la imagen de los tambores para un diseño más limpio */
+}
+.btn {
+    margin: 5px;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table thead th {
+    background-color: #000;
+    color: #fff;
+}
